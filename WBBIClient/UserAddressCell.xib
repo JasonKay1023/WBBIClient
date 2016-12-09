@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddressCell" rowHeight="100" id="lfr-nB-nx7" customClass="UserAddressTVC">
+            <rect key="frame" x="0.0" y="28" width="600" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lfr-nB-nx7" id="VLR-zx-HxT">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PBUI_SelectAddress_ColourBox" translatesAutoresizingMaskIntoConstraints="NO" id="61B-Ke-pg3">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PBUI_SelectAddress_Location" translatesAutoresizingMaskIntoConstraints="NO" id="fS4-pi-9OC">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PBUI_SelectAddress_Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Rox-xn-xKe">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货人：波多野结衣" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzs-Lb-zjc">
+                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13528566686" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6f-cl-xyk">
+                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="收货地址：广东省东莞市番禺区市桥街道富华东路52号玩包包2楼啦啦啦啦" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlT-r1-hNv">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Pzs-Lb-zjc" firstAttribute="top" secondItem="VLR-zx-HxT" secondAttribute="topMargin" id="42r-l7-Gov"/>
+                    <constraint firstItem="fS4-pi-9OC" firstAttribute="leading" secondItem="VLR-zx-HxT" secondAttribute="leadingMargin" id="522-4Q-aw0"/>
+                    <constraint firstItem="61B-Ke-pg3" firstAttribute="top" secondItem="hlT-r1-hNv" secondAttribute="bottom" constant="8" id="6TE-bK-1Dc"/>
+                    <constraint firstItem="61B-Ke-pg3" firstAttribute="leading" secondItem="VLR-zx-HxT" secondAttribute="leadingMargin" constant="-8" id="8dD-W5-o5M"/>
+                    <constraint firstItem="hlT-r1-hNv" firstAttribute="top" secondItem="w6f-cl-xyk" secondAttribute="bottom" constant="8" id="BPh-tm-wfE">
+                        <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                    </constraint>
+                    <constraint firstItem="w6f-cl-xyk" firstAttribute="top" secondItem="VLR-zx-HxT" secondAttribute="topMargin" id="C0F-RV-A2j"/>
+                    <constraint firstItem="Rox-xn-xKe" firstAttribute="leading" secondItem="hlT-r1-hNv" secondAttribute="trailing" constant="8" id="Gyz-jz-iK0"/>
+                    <constraint firstItem="Pzs-Lb-zjc" firstAttribute="leading" secondItem="fS4-pi-9OC" secondAttribute="trailing" constant="8" id="IGT-VJ-EdH"/>
+                    <constraint firstItem="hlT-r1-hNv" firstAttribute="leading" secondItem="fS4-pi-9OC" secondAttribute="trailing" constant="8" id="PPu-AK-saF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Rox-xn-xKe" secondAttribute="trailing" id="ScL-zx-jna"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="61B-Ke-pg3" secondAttribute="bottom" constant="-8" id="dAM-lW-2pC"/>
+                    <constraint firstItem="fS4-pi-9OC" firstAttribute="centerY" secondItem="VLR-zx-HxT" secondAttribute="centerY" constant="-4" id="dKJ-hQ-liV"/>
+                    <constraint firstItem="Rox-xn-xKe" firstAttribute="leading" secondItem="w6f-cl-xyk" secondAttribute="trailing" constant="8" id="eCw-UI-y1n"/>
+                    <constraint firstItem="Rox-xn-xKe" firstAttribute="centerY" secondItem="VLR-zx-HxT" secondAttribute="centerY" constant="-4" id="fau-eM-CTg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="61B-Ke-pg3" secondAttribute="trailing" constant="-8" id="sSp-Eu-uNY"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="61B-Ke-pg3"/>
+                        <exclude reference="fS4-pi-9OC"/>
+                        <exclude reference="Rox-xn-xKe"/>
+                        <exclude reference="Pzs-Lb-zjc"/>
+                        <exclude reference="w6f-cl-xyk"/>
+                        <exclude reference="hlT-r1-hNv"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="42r-l7-Gov"/>
+                        <exclude reference="IGT-VJ-EdH"/>
+                        <exclude reference="C0F-RV-A2j"/>
+                        <exclude reference="6TE-bK-1Dc"/>
+                        <exclude reference="8dD-W5-o5M"/>
+                        <exclude reference="dAM-lW-2pC"/>
+                        <exclude reference="sSp-Eu-uNY"/>
+                        <exclude reference="Gyz-jz-iK0"/>
+                        <exclude reference="ScL-zx-jna"/>
+                        <exclude reference="eCw-UI-y1n"/>
+                        <exclude reference="fau-eM-CTg"/>
+                        <exclude reference="522-4Q-aw0"/>
+                        <exclude reference="dKJ-hQ-liV"/>
+                        <exclude reference="BPh-tm-wfE"/>
+                        <exclude reference="PPu-AK-saF"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="61B-Ke-pg3"/>
+                        <include reference="fS4-pi-9OC"/>
+                        <include reference="Rox-xn-xKe"/>
+                        <include reference="Pzs-Lb-zjc"/>
+                        <include reference="w6f-cl-xyk"/>
+                        <include reference="hlT-r1-hNv"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="42r-l7-Gov"/>
+                        <include reference="IGT-VJ-EdH"/>
+                        <include reference="C0F-RV-A2j"/>
+                        <include reference="6TE-bK-1Dc"/>
+                        <include reference="8dD-W5-o5M"/>
+                        <include reference="dAM-lW-2pC"/>
+                        <include reference="sSp-Eu-uNY"/>
+                        <include reference="Gyz-jz-iK0"/>
+                        <include reference="ScL-zx-jna"/>
+                        <include reference="eCw-UI-y1n"/>
+                        <include reference="fau-eM-CTg"/>
+                        <include reference="522-4Q-aw0"/>
+                        <include reference="dKJ-hQ-liV"/>
+                        <include reference="BPh-tm-wfE"/>
+                        <include reference="PPu-AK-saF"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="AddressDetail" destination="hlT-r1-hNv" id="isJ-Db-dw3"/>
+                <outlet property="BuyerName" destination="Pzs-Lb-zjc" id="MsP-ju-EK1"/>
+                <outlet property="Phone" destination="w6f-cl-xyk" id="Z0h-CO-Eoh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PBUI_SelectAddress_Arrow" width="22" height="38"/>
+        <image name="PBUI_SelectAddress_ColourBox" width="640" height="12"/>
+        <image name="PBUI_SelectAddress_Location" width="25" height="33"/>
+    </resources>
+</document>

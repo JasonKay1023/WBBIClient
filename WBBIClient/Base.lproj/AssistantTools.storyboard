@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AJr-2L-3mb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--TestingVC-->
+        <scene sceneID="xjX-nx-edx">
+            <objects>
+                <viewController storyboardIdentifier="TestingVC" id="nR4-vd-ZJl" customClass="TestingVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="030-Ng-GZZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ied-hl-8oP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vF3-ZO-WGX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3l-zb-Xsd">
+                                <rect key="frame" x="17" y="72" width="100" height="30"/>
+                                <state key="normal" title="用戶登錄"/>
+                                <connections>
+                                    <action selector="UserLoginBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="ngG-wi-Y9w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8V-r8-fpB">
+                                <rect key="frame" x="17" y="110" width="100" height="30"/>
+                                <state key="normal" title="用戶註冊"/>
+                                <connections>
+                                    <action selector="UserRegisterBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="o2b-e6-5o5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xse-ny-bEp">
+                                <rect key="frame" x="17" y="148" width="100" height="30"/>
+                                <state key="normal" title="用戶實名認證"/>
+                                <connections>
+                                    <action selector="RealNameBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="Gh9-Ku-SxA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVh-9j-DEI">
+                                <rect key="frame" x="17" y="224" width="100" height="30"/>
+                                <state key="normal" title="用戶信息提交2">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PersonalModify:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="KeH-HX-ekV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk4-7W-hA7">
+                                <rect key="frame" x="17" y="186" width="100" height="30"/>
+                                <state key="normal" title="用戶信息提交1"/>
+                                <connections>
+                                    <action selector="InfoModifyBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="0as-fF-SuW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7J-4s-96b">
+                                <rect key="frame" x="17" y="262" width="100" height="30"/>
+                                <state key="normal" title="用戶個人主頁">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="UserIndexBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="aIU-7q-gcZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCI-oo-B83">
+                                <rect key="frame" x="17" y="300" width="100" height="30"/>
+                                <state key="normal" title="商品收藏列表"/>
+                                <connections>
+                                    <action selector="GoodsFavourBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="eWP-ZW-xeC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2e-Uy-bBx">
+                                <rect key="frame" x="157" y="72" width="100" height="30"/>
+                                <state key="normal" title="支付測試"/>
+                                <connections>
+                                    <action selector="PayTesting:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="vaR-ZZ-gkq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brj-JG-9MJ">
+                                <rect key="frame" x="17" y="338" width="100" height="30"/>
+                                <state key="normal" title="商品贊列表"/>
+                                <connections>
+                                    <action selector="GoodsLikeBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="24r-zG-BI6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U35-cc-JdU">
+                                <rect key="frame" x="17" y="376" width="100" height="30"/>
+                                <state key="normal" title="購物車列表"/>
+                                <connections>
+                                    <action selector="CartListBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="h6l-FW-79a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ng5-1c-9Yf">
+                                <rect key="frame" x="17" y="414" width="100" height="30"/>
+                                <state key="normal" title="訂單確認">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="OrderConfirmBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="Oun-pj-ctE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqP-qk-n7X">
+                                <rect key="frame" x="17" y="452" width="100" height="30"/>
+                                <state key="normal" title="商品上架">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="GoodsCreateBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="Xpp-vl-TOf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24d-8U-hiF">
+                                <rect key="frame" x="157" y="110" width="100" height="30"/>
+                                <state key="normal" title="商品主頁"/>
+                                <connections>
+                                    <action selector="GoodsIndexBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="Pfl-Sa-MwL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrv-cH-6ad">
+                                <rect key="frame" x="157" y="148" width="100" height="30"/>
+                                <state key="normal" title="商品列表"/>
+                                <connections>
+                                    <action selector="GoodsListBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="7kc-P3-cAp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5G-pW-Y1R">
+                                <rect key="frame" x="157" y="186" width="100" height="30"/>
+                                <state key="normal" title="商品詳情"/>
+                                <connections>
+                                    <action selector="GoodsDetailBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="y8L-7Z-sbE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePK-nb-s1n">
+                                <rect key="frame" x="157" y="224" width="100" height="30"/>
+                                <state key="normal" title="新首頁">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="IndexBPressed:" destination="nR4-vd-ZJl" eventType="touchUpInside" id="iHX-82-lB4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pdk-ul-vhK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m59-eq-W86" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="485"/>
+        </scene>
+        <!--Date PickerVC-->
+        <scene sceneID="9IG-dP-BIw">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerVC" id="WbP-Z7-aao" customClass="DatePickerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vDa-jg-LLj"/>
+                        <viewControllerLayoutGuide type="bottom" id="caw-P6-LW7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DPc-1i-9gU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXf-Cl-Y2a">
+                                <rect key="frame" x="20" y="28" width="560" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="URu-zq-TB5"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="-347183999.33464801">
+                                    <!--1989-12-31 16:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fXf-Cl-Y2a" firstAttribute="leading" secondItem="DPc-1i-9gU" secondAttribute="leadingMargin" id="9A5-wA-ZSG"/>
+                            <constraint firstItem="fXf-Cl-Y2a" firstAttribute="trailing" secondItem="DPc-1i-9gU" secondAttribute="trailingMargin" id="Yqu-mx-gxF"/>
+                            <constraint firstItem="fXf-Cl-Y2a" firstAttribute="top" secondItem="vDa-jg-LLj" secondAttribute="bottom" constant="8" id="bvu-fh-XCn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DateP" destination="fXf-Cl-Y2a" id="DIH-qW-tPQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKE-vb-tzp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="485"/>
+        </scene>
+        <!--Location PickerVC-->
+        <scene sceneID="0Ob-Xe-h5T">
+            <objects>
+                <viewController storyboardIdentifier="LocationPickerVC" id="fxm-zM-ift" customClass="LocationPickerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KcB-KU-bTl"/>
+                        <viewControllerLayoutGuide type="bottom" id="z72-Jw-2RK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8fr-Qg-oMn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BY1-HO-aFA">
+                                <rect key="frame" x="20" y="28" width="560" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BY1-HO-aFA" firstAttribute="top" secondItem="KcB-KU-bTl" secondAttribute="bottom" constant="8" id="253-wZ-hGR"/>
+                            <constraint firstItem="BY1-HO-aFA" firstAttribute="leading" secondItem="8fr-Qg-oMn" secondAttribute="leadingMargin" id="5mf-wu-4dW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BY1-HO-aFA" secondAttribute="trailing" id="WGE-bb-F1m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PickerPV" destination="BY1-HO-aFA" id="7ot-8M-U6x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CiX-g1-gT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2146" y="485"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="lDR-63-ptN">
+            <objects>
+                <viewController storyboardIdentifier="TextInputVC" id="ck0-Hz-9yp" customClass="TextInputVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mwk-c6-huY"/>
+                        <viewControllerLayoutGuide type="bottom" id="MzC-n6-Eiy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cd9-HM-i74">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Click to modify..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iNd-wh-qBR">
+                                <rect key="frame" x="20" y="28" width="560" height="150"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="pCu-u5-ebd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iNd-wh-qBR" firstAttribute="leading" secondItem="Cd9-HM-i74" secondAttribute="leadingMargin" id="3H7-aF-9Tk"/>
+                            <constraint firstItem="iNd-wh-qBR" firstAttribute="trailing" secondItem="Cd9-HM-i74" secondAttribute="trailingMargin" id="GnL-En-J9r"/>
+                            <constraint firstItem="iNd-wh-qBR" firstAttribute="top" secondItem="Mwk-c6-huY" secondAttribute="bottom" constant="8" id="qbj-wx-q0p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="RRP-cO-mQB">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="X3S-CS-8KJ">
+                            <connections>
+                                <action selector="SaveBBPressed:" destination="ck0-Hz-9yp" id="gOk-G4-JaD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="InputTV" destination="iNd-wh-qBR" id="fZs-uN-34b"/>
+                        <outlet property="SaveBB" destination="X3S-CS-8KJ" id="NQM-Jl-IRn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uwk-QS-rBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2777" y="485"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fIA-U4-tLa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AJr-2L-3mb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f4m-o1-z4J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nR4-vd-ZJl" kind="relationship" relationship="rootViewController" id="ojQ-FY-KVW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAb-O2-byd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="485"/>
+        </scene>
+    </scenes>
+</document>

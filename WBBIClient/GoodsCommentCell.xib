@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GoodsCommentItem" rowHeight="168" id="fEP-V0-cbE" customClass="GoodsCommentTVC">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fEP-V0-cbE" id="Bxl-F6-U3y">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="167.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wbv-XY-RTF">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="DBT-1T-N9j"/>
+                            <constraint firstAttribute="height" constant="100" id="Erq-hD-nBo"/>
+                            <constraint firstAttribute="width" constant="100" id="hpq-sb-8ss"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DBT-1T-N9j"/>
+                                <exclude reference="Erq-hD-nBo"/>
+                                <exclude reference="hpq-sb-8ss"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="DBT-1T-N9j"/>
+                                <include reference="Erq-hD-nBo"/>
+                                <include reference="hpq-sb-8ss"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CfT-jb-Oqv">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymv-fs-8SJ">
+                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcX-UE-W0Z">
+                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                        <animations/>
+                        <state key="normal" title="举报">
+                            <color key="titleColor" red="0.86666666670000003" green="0.21176470589999999" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="ReportBPressed:" destination="fEP-V0-cbE" eventType="touchUpInside" id="QkQ-a5-DvW"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="Wbv-XY-RTF" firstAttribute="leading" secondItem="Bxl-F6-U3y" secondAttribute="leadingMargin" id="6Hd-SY-N7A"/>
+                    <constraint firstItem="ymv-fs-8SJ" firstAttribute="leading" secondItem="Wbv-XY-RTF" secondAttribute="trailing" constant="8" id="SpV-Bm-TjV"/>
+                    <constraint firstItem="vcX-UE-W0Z" firstAttribute="top" secondItem="Bxl-F6-U3y" secondAttribute="topMargin" id="Sqv-Zr-vHr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="CfT-jb-Oqv" secondAttribute="bottom" constant="1" id="UBf-Rg-4Ld"/>
+                    <constraint firstItem="vcX-UE-W0Z" firstAttribute="trailing" secondItem="Bxl-F6-U3y" secondAttribute="trailingMargin" id="Xon-t0-pqM"/>
+                    <constraint firstItem="ymv-fs-8SJ" firstAttribute="top" secondItem="Bxl-F6-U3y" secondAttribute="topMargin" id="bgg-Rf-5ip"/>
+                    <constraint firstItem="Wbv-XY-RTF" firstAttribute="leading" secondItem="Bxl-F6-U3y" secondAttribute="leadingMargin" id="cWD-EH-FDj"/>
+                    <constraint firstItem="CfT-jb-Oqv" firstAttribute="leading" secondItem="Wbv-XY-RTF" secondAttribute="trailing" constant="8" id="mtZ-4k-eBj"/>
+                    <constraint firstItem="CfT-jb-Oqv" firstAttribute="top" secondItem="Bxl-F6-U3y" secondAttribute="topMargin" constant="28" id="n9J-s3-Dvr"/>
+                    <constraint firstItem="Wbv-XY-RTF" firstAttribute="top" secondItem="Bxl-F6-U3y" secondAttribute="topMargin" id="tn1-DL-eGW"/>
+                    <constraint firstItem="CfT-jb-Oqv" firstAttribute="trailing" secondItem="Bxl-F6-U3y" secondAttribute="trailingMargin" id="yRn-YW-7nO"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="Wbv-XY-RTF"/>
+                        <exclude reference="CfT-jb-Oqv"/>
+                        <exclude reference="ymv-fs-8SJ"/>
+                        <exclude reference="vcX-UE-W0Z"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="Sqv-Zr-vHr"/>
+                        <exclude reference="Xon-t0-pqM"/>
+                        <exclude reference="SpV-Bm-TjV"/>
+                        <exclude reference="bgg-Rf-5ip"/>
+                        <exclude reference="UBf-Rg-4Ld"/>
+                        <exclude reference="mtZ-4k-eBj"/>
+                        <exclude reference="n9J-s3-Dvr"/>
+                        <exclude reference="yRn-YW-7nO"/>
+                        <exclude reference="6Hd-SY-N7A"/>
+                        <exclude reference="cWD-EH-FDj"/>
+                        <exclude reference="tn1-DL-eGW"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="Wbv-XY-RTF"/>
+                        <include reference="CfT-jb-Oqv"/>
+                        <include reference="ymv-fs-8SJ"/>
+                        <include reference="vcX-UE-W0Z"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="Sqv-Zr-vHr"/>
+                        <include reference="Xon-t0-pqM"/>
+                        <include reference="SpV-Bm-TjV"/>
+                        <include reference="bgg-Rf-5ip"/>
+                        <include reference="UBf-Rg-4Ld"/>
+                        <include reference="mtZ-4k-eBj"/>
+                        <include reference="n9J-s3-Dvr"/>
+                        <include reference="yRn-YW-7nO"/>
+                        <include reference="6Hd-SY-N7A"/>
+                        <include reference="cWD-EH-FDj"/>
+                        <include reference="tn1-DL-eGW"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="AvatarIV" destination="Wbv-XY-RTF" id="fyn-B9-bSg"/>
+                <outlet property="AvatarV" destination="Wbv-XY-RTF" id="fmN-0C-Vf3"/>
+                <outlet property="ContentL" destination="CfT-jb-Oqv" id="vda-Du-Zcu"/>
+                <outlet property="NameL" destination="ymv-fs-8SJ" id="5Rn-rf-JlQ"/>
+                <outlet property="ReportB" destination="vcX-UE-W0Z" id="5pe-TS-ER8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoodsIndexItemV"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GoodsIndexItemV">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x2T-E5-ssg">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <animations/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="8" y="8" width="300" height="300"/>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zh8-bJ-niT">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="8" y="321" width="300" height="21"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bt-ok-E6V">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="8" y="342" width="300" height="21"/>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teb-uu-y2k">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="8" y="371" width="300" height="21"/>
+                    </variation>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="x2T-E5-ssg"/>
+                    <exclude reference="zh8-bJ-niT"/>
+                    <exclude reference="9Bt-ok-E6V"/>
+                    <exclude reference="Teb-uu-y2k"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="x2T-E5-ssg"/>
+                    <include reference="zh8-bJ-niT"/>
+                    <include reference="9Bt-ok-E6V"/>
+                    <include reference="Teb-uu-y2k"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="AvatarIV" destination="x2T-E5-ssg" id="bX1-au-iPG"/>
+                <outlet property="BrandL" destination="zh8-bJ-niT" id="Q18-dC-WON"/>
+                <outlet property="PriceL" destination="Teb-uu-y2k" id="lIa-15-5KI"/>
+                <outlet property="TitleL" destination="9Bt-ok-E6V" id="oci-to-Avl"/>
+            </connections>
+        </view>
+    </objects>
+</document>
